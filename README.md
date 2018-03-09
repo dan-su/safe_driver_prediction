@@ -11,3 +11,6 @@ During scoring, observations are sorted from the largest to the smallest predict
 The Gini Coefficient ranges from approximately 0 for random guessing, to approximately 0.5 for a perfect score. The theoretical maximum for the discrete calculation is (1 - frac_pos) / 2.
 
 The Normalized Gini Coefficient adjusts the score by the theoretical maximum so that the maximum score is 1.
+
+
+In the train and test data, features that belong to similar groupings are tagged as such in the feature names (e.g., ind, reg, car, calc). In addition, feature names include the postfix bin to indicate binary features and cat to indicate categorical features. Features without these designations are either continuous or ordinal. Values of -1 indicate that the feature was missing from the observation. The target columns signifies whether or not a claim was filed for that policy holder
